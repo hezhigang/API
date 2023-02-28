@@ -8,6 +8,7 @@ namespace API.Models
 
 		public BookStoreContext(DbContextOptions<BookStoreContext> options) : base(options) { }
 
+/*
 		protected override void OnModelCreating(ModelBuilder modelBuilder) 
 		{
 			modelBuilder.Entity<Category>()
@@ -17,7 +18,7 @@ namespace API.Models
 
 			modelBuilder.seed();
 		}
-
+*/
 		public DbSet<Book> Books { get; set; }
 		public DbSet<Category> Categories { get; set; }
 
